@@ -49,8 +49,6 @@ angular.module('starter.controllers', [])
 .controller('ServicesCtrl', function($scope, $stateParams) {
 })
 
-.controller('ProfileCtrl', function($scope, $stateParams) {
-})
 
 .controller('AppointmemtCtrl', function($scope, $stateParams) {
 });
