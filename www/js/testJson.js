@@ -1,14 +1,18 @@
 var availbleServices = [
 {
-"serviceName": "JavaScript Tutorial"
+"serviceName": "JavaScript Tutorial",
+"url":"JavaScript"
 },
 {
-"serviceName": "HTML Tutorial"
+"serviceName": "HTML Tutorial",
+"url":"HTML"
 },
 {
-"serviceName": "CSS Tutorial"
+"serviceName": "CSS Tutorial",
+"url":"CSS"
 },
 {
-"serviceName": "Museum"
+"serviceName": "Museum",
+"url":"Museum"
 }
 ];

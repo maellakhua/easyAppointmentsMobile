@@ -1,19 +1,7 @@
 <ion-view view-title="Services">
 </ion-header-bar>
 	<ion-content>
-		<div id="myServices"><br><br>
-			<ul class="list">
-
-  				<li class="item item-toggle">
-     				HTML5
-     				<label class="toggle toggle-assertive">
-       					<input type="checkbox">
-       					<div class="track">
-         					<div class="handle"></div>
-       					</div>
-     				</label>
-  				</li>
-  			</ul>
+		<div id="myServices"><br><br>			
 		</div>
 		
 	</ion-content>

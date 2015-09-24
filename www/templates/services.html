@@ -1,11 +1,7 @@
 <ion-view view-title="Services">
-</ion-header-bar>
 	<ion-content>
-		<div id="myServices"><br><br>
-			
-		</div>
-		
+		<ion-item class="item" ng-repeat="services in availbleServices" href="#/app/services/{{services.url}}">{{services.serviceName}}</ion-item>
 	</ion-content>
 </ion-view>
 
-	  <script src="testJson.js"></script>	  
+<script src="testJson.js"></script>
