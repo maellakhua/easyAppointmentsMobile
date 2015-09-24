@@ -1,22 +1,25 @@
-<ion-view view-title="Profile">
-  <ion-content>
-		<div class="list">
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">First Name</span>
-    <input type="text" placeholder="John" ng-model="fname">
-  </label>
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Last Name</span>
-    <input type="text" placeholder="Suhr" ng-model="surname">
-  </label>
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Email</span>
-    <input type="text" placeholder="john@suhr.com" ng-model="email">
-  </label>
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Phone</span>
-    <input type="text" placeholder="john@suhr.com" ng-model="phone">
-  </label>
-</div>
-  </ion-content>
-</ion-view>
+<ion-view view-title="form">
+       <ion-content>
+           <div class="list">
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">First Name</span>
+                   <input type="text" placeholder="name" ng-model="fname">
+               </label>
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">Last Name</span>
+                   <input type="text" placeholder="surname" ng-model="surname">
+               </label>
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">Email</span>
+                   <input type="text" placeholder="email" ng-model="email">
+               </label>
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">Phone</span>
+                   <input type="text" placeholder="phone" ng-model="phone">
+               </label>
+           </div>
+           <div class="Submit">
+               <button class="button icon-right ion-chevron-right button-bar-stable"style="top:50%; left:50%;" ng-click="Submit()">Submit</button>
+           </div>
+       </ion-content>
+   </ion-view>

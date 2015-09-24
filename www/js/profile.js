@@ -11,7 +11,7 @@ angular.module('starter.profile', [])
 	if(fname){
 		$scope.fname=name;
 	}else{
-		$scope.fname="Names";
+		$scope.fname="Name";
 	}if(surname){
 		$scope.surname=surname;
 	}else{
@@ -25,6 +25,16 @@ angular.module('starter.profile', [])
 	}else{
 		$scope.phone="phone";
 	}
+
+	$scope.Submit =function ($scope, $ionicHistory){
+
+			fname=$scope.fname;
+			surname=$scope.surname;
+			email=$scope.email;
+			phone=$scope.phone;
+
+			alert(fname+" "+surname+" "+email+" "+phone);
+		};
 
 }
 );
