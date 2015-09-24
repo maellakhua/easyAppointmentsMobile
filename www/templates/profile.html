@@ -3,19 +3,19 @@
            <div class="list">
                <label class="item item-input item-stacked-label">
                    <span class="input-label">First Name</span>
-                   <input type="text" placeholder="fname" ng-model="fname">
+                   <input type="text" placeholder="ex.Tilemachos" ng-model="$parent.fname" ng-change="Submit()" >
                </label>
                <label class="item item-input item-stacked-label">
                    <span class="input-label">Last Name</span>
-                   <input type="text" placeholder="surname" ng-model="surname">
+                   <input id="surname" type="text" placeholder="ex.Petsopoulos" ng-model="$parent.surname">
                </label>
                <label class="item item-input item-stacked-label">
                    <span class="input-label">Email</span>
-                   <input type="text" placeholder="email" ng-model="email">
+                   <input id="email" type="text" placeholder="ex.it213*@hua.gr" ng-model="$parent.email">
                </label>
                <label class="item item-input item-stacked-label">
                    <span class="input-label">Phone</span>
-                   <input type="text" placeholder="phone" ng-model="phone">
+                   <input id="phone" type="text" placeholder="1234567890" ng-model="$parent.phone">
                </label>
            </div>
            <div class="Submit">
