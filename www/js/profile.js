@@ -1,4 +1,4 @@
-angular.module('starter.profile', [])
+angular.module('starter.profile', ['ionic'])
 
 .controller('ProfileCtrl', function($scope, $stateParams) {
 
@@ -26,7 +26,7 @@ angular.module('starter.profile', [])
 		$scope.phone="phone";
 	}
 
-	$scope.Submit =function ($scope, $ionicHistory){
+	$scope.Submit =function (){
 
 			fname=$scope.fname;
 			surname=$scope.surname;
