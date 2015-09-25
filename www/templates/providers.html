@@ -1,10 +1,8 @@
 <ion-view view-title="Providers">
 	<ion-content>
-		<div id="myProviders"><br><br>
-			<h1>HI</h1>
-		</div>
-
+		<ion-item item-avatar class="item" ng-repeat="services in availbleServices" href="#/app/calendar"><icon src="icons/img/ionic.png" width="60" height="60" />{{services.provider_name}} <p>duration: {{services.duration}}, price: {{services.price}}, description: {{services.description}}</p></ion-item item-avatar>
 	</ion-content>
 </ion-view>
 
-<script src="testJson.js"></script>
+<!--<script src="testJson.js"></script>-->
+<script src="ionic.png"></script>

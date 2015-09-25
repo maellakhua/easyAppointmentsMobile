@@ -1,0 +1,13 @@
+<ion-view view-title="Calendar">
+<<<<<<< HEAD
+  <ion-content>
+    <ionic-datepicker date="currentDate" min="minDate" max="maxDate" callback="datePickerCallback">
+    <button class="button button-block button-positive">Today is:  {{ currentDate | date:'MMMM/dd/yyyy' }} </button>
+</ionic-datepicker>
+  </ion-content>
+=======
+	<ion-content>
+		<h1>Hi</h1>
+	</ion-content>
+>>>>>>> 68076d4da0e11745a83a7105f3d46e7b1b152544
+</ion-view>

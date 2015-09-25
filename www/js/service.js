@@ -1,7 +1,18 @@
 angular.module('starter.services', [])
 
-.controller('ServicesCtrl', function($scope, $stateParams) {
+.controller('ServicesCtrl', function($scope, $stateParams,$http) {
+	console.log("In service");
 
-	$scope.availbleServices = availbleServices;
+	//$scope.availbleServices = availbleServices;
 
+		$http({
+		        method: 'GET',
+		        url: 'http://83.212.125.194/appointments/api/services/categories',
+		        headers: {'Content-type':undefined}
+		     }).success(function(data){
+					 console.log("Success",data);
+					 $scope.availbleServices = data;
+		    }).error(function(){
+		        console.log("Error",error);
+		    });
 });
