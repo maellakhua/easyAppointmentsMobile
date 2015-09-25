@@ -62,8 +62,18 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.profile','sta
       }
     })
 
+    .state('app.calendar', {
+        url: '/calendar',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/calendar.html',
+  	  	  controller: 'ServicesCtrl'
+          }
+        }
+      })
+
     .state('app.provider', {
-        url: '/services/:serviceName',
+        url: '/services/:serviceId',
         views: {
           'menuContent': {
             templateUrl: 'templates/providers.html',

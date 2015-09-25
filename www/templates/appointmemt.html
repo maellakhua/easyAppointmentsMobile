@@ -1,5 +1,7 @@
 <ion-view view-title="appointment">
   <ion-content>
-    <h1>Appointment</h1>
+    <ion-item class="item" ng-repeat="services in availbleServices">{{services.name}} <p>duration: {{services.duration}}, price: {{services.price}}, description: {{services.description}}</p></ion-item>
   </ion-content>
 </ion-view>
+
+<script src="testJson.js"></script>

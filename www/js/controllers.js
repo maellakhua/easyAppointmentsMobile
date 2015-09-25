@@ -42,4 +42,5 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AppointmemtCtrl', function($scope, $stateParams) {
+  $scope.availbleServices = availbleServices;
 });
