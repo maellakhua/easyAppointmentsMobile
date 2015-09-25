@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ionic-timepicker','st
     })
 
     .state('app.provider', {
-        url: '/services/:serviceName',
+        url: '/services/:serviceId',
         views: {
           'menuContent': {
             templateUrl: 'templates/providers.html',

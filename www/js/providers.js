@@ -16,6 +16,4 @@ angular.module('starter.providers', [])
 					console.log("Error",error);
 			});
 
-		//$scope.availbleServices = availbleServices;
-
 });
