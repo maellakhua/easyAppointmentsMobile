@@ -9,7 +9,6 @@ var availbleServices = [
 "id_service_categories":"9"
 },
 {
-
 "id":"2",
 "name": "HTML Tutorial",
 "duration":"3",
@@ -17,10 +16,8 @@ var availbleServices = [
 "curency":"E",
 "description":"R",
 "id_service_categories":"9"
-
 },
 {
-
 "id":"2",
 "name": "CSS Tutorial",
 "duration":"5",
@@ -30,7 +27,6 @@ var availbleServices = [
 "id_service_categories":"9"
 },
 {
-
 "id":"2",
 "name": "Museum",
 "duration":"7",

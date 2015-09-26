@@ -1,13 +1,13 @@
-angular.module('starter.providers', [])
+angular.module('starter.allProviders', [])
 
-.controller('ProvidersCtrl', function($scope, $stateParams,$http) {
+.controller('AllProvidersCtrl', function($scope, $stateParams,$http) {
 
 	console.log("in provider");
 	console.log($stateParams.serviceId);
 
 		$http({
 					method: 'GET',
-					url: 'http://83.212.125.194/appointments/api/providers/by_category_id/id/'+$stateParams.serviceId,
+					url: 'http://83.212.125.194/appointments/api/providers/all',
 					headers: {'Content-type':undefined}
 			 }).success(function(data){
 				 console.log("Success",data);
