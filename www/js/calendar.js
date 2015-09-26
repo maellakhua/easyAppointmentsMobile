@@ -2,7 +2,7 @@ angular.module('starter.calendar', ['ionic', 'ionic-datepicker','angular-datepic
 
 .controller('CalendarCtrl', function($scope, $stateParams) {
   $scope.currentDate = new Date();
-
+var val;
 
 $scope.datePickerCallback = function (val) {
     var nextPage = '';
@@ -11,11 +11,10 @@ $scope.datePickerCallback = function (val) {
         alert("You didn't select a date");
     } else {
         console.log('Selected date is : ', val);
-        alert(val);
         if($scope.currentDate > val){
-            alert("This date is unavailble..");
+            alert("This date is unavailable! \n Please provide new date.");
         }else{
-            //nextPage = 'href="#/app/time"';
+            document.getElementById("time").style.visibility = "visible";
         }
     }
 };

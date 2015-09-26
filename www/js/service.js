@@ -3,8 +3,6 @@ angular.module('starter.services', [])
 .controller('ServicesCtrl', function($scope, $stateParams,$http) {
 	console.log("In service");
 
-	//$scope.availbleServices = availbleServices;
-
 		$http({
 		        method: 'GET',
 		        url: 'http://83.212.125.194/appointments/api/services/categories',
