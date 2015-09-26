@@ -12,6 +12,8 @@ angular.module('starter.providers', [])
 			 }).success(function(data){
 				 console.log("Success",data);
 				 $scope.availbleServices = data;
+				 //localStorage.setItem("service",  services);
+				 //alert();
 			}).error(function(){
 					console.log("Error",error);
 			});
