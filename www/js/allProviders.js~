@@ -5,7 +5,7 @@ angular.module('starter.allProviders', [])
 	var prvName;
 	$scope.showme=[];
 	$scope.showme.fill(false);
-	console.log("In all providers");
+	console.log("in all providers");
 
 		$http({
 					method: 'GET',

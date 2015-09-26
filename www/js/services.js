@@ -1,7 +1,7 @@
 angular.module('starter.services', [])
 
 .controller('ServicesCtrl', function($scope, $stateParams,$http) {
-	console.log("In services");
+	console.log("In service");
 
 		$http({
 		        method: 'GET',

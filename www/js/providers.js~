@@ -24,7 +24,7 @@ angular.module('starter.providers', [])
     e = e || window.event;
     var target = e.target || e.srcElement,
         text = target.textContent || text.innerText;
-	alert(target);   
+	alert(text);   
 }, false);
 		
 		localStorage.setItem("category_name",  dataArray[0].category_name);

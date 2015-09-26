@@ -2,7 +2,7 @@ angular.module('starter.calendar', ['ionic', 'ionic-datepicker','angular-datepic
 
 .controller('CalendarCtrl', function($scope, $stateParams) {
   $scope.currentDate = new Date();
-  var val;
+var val;
 
 $scope.datePickerCallback = function (val) {
     var nextPage = '';
