@@ -15,6 +15,7 @@ angular.module('starter.time', ['ionic-timepicker','ui.router'])
  }
 };
  function timePickerCallback(val) {
+  document.getElementById('available_time').innerHTML = "Test";
   if (typeof (val) === 'undefined') {
     alert('Time not selected');
     $state.go('app.time', {}, { reload: true });
