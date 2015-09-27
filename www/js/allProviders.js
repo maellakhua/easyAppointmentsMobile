@@ -2,9 +2,11 @@ angular.module('starter.allProviders', [])
 
 .controller('AllProvidersCtrl', function($scope, $stateParams,$http) {
 
-	// var prvName;
-	// $scope.showme=[];
+	var prvName;
+	var dataArray=[];
+	$scope.showme=[];
 	// $scope.showme.fill(false);
+
 	console.log("In all providers");
 
 		$http({
@@ -14,17 +16,22 @@ angular.module('starter.allProviders', [])
 			 }).success(function(data){
 				 console.log("Success",data);
 				  $scope.availbleServices= data;
+					dataArray = data;
 			}).error(function(){
 					console.log("Error",error);
 			});
 
-			// $scope.show =function (whichHide){
-			//
-			// 	$scope.showme.fill(false);
-			// 	$scope.showme[whichHide]=true;
-			// 	$scope.showme[prvName]=false;
-			// 	prvName=whichHide;
-			//
-			// }
+			for(var i=0;i<dataArray.length;i++){
+					$scope.showme[i]=false;
+			}
+
+			$scope.show =function (whichHide){
+
+				//$scope.showme.fill(false);
+				$scope.showme[whichHide]=true;
+				$scope.showme[prvName]=false;
+				prvName=whichHide;
+
+			}
 
 });

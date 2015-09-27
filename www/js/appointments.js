@@ -14,4 +14,26 @@ angular.module('starter.appointmemt', [])
 		//     }).error(function(){
 		//         console.log("Error",error);
 		//     });
+
+		var prvName;
+		var dataArray=[];
+		$scope.showme=[];
+		// $scope.showme.fill(false);
+
+		console.log("In appointments");
+
+			
+
+				for(var i=0;i<dataArray.length;i++){
+						$scope.showme[i]=false;
+				}
+
+				$scope.show =function (whichHide){
+
+					//$scope.showme.fill(false);
+					$scope.showme[whichHide]=true;
+					$scope.showme[prvName]=false;
+					prvName=whichHide;
+
+				}
 });
