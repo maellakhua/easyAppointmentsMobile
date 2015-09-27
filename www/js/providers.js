@@ -4,7 +4,7 @@ angular.module('starter.providers', [])
 
 .controller('ProvidersCtrl', function($scope, $stateParams,$http) {
 
-	if(!window.localStorage["category_name_0"]){
+	if(!window.localStorage["category_name_1"]){
 		localStorage.setItem("numOfInserts",0);
 	}
 
