@@ -20,7 +20,7 @@ angular.module('starter.profile', ['ionic','ui.router'])
 			window.localStorage['phone']=$scope.phone;
 
 			$state.go('app.services', {}, { reload: true })
-		};	
+		};
 
 }
 );

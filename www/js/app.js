@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers','ionic-timepicker','starter.profile','starter.services','starter.time','angular-datepicker','starter.providers','starter.calendar','ionic-datepicker','starter.allProviders'])
+angular.module('starter', ['ionic', 'starter.controllers','ionic-timepicker','starter.profile','starter.services','starter.time','angular-datepicker','starter.providers','starter.calendar','ionic-datepicker','starter.allProviders','starter.appointmemt'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -52,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ionic-timepicker','st
     })
 
 	.state('app.profile', {
-      url: '/profile',
+      url: '/services/calendar/time/:time/profile',
       views: {
         'menuContent': {
           templateUrl: 'templates/profile.html',
@@ -82,7 +82,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ionic-timepicker','st
         })
 
       .state('app.calendar', {
-          url: '/calendar',
+          url: '/services/:serviceId/:providerId/calendar',
           views: {
             'menuContent': {
               templateUrl: 'templates/calendar.html',
@@ -92,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ionic-timepicker','st
         })
 
         .state('app.time', {
-            url: '/time',
+            url: '/services/calendar/:date/time',
             views: {
               'menuContent': {
                 templateUrl: 'templates/time.html',

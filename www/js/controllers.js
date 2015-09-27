@@ -40,7 +40,4 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-
-.controller('AppointmemtCtrl', function($scope, $stateParams) {
-  $scope.availbleServices = availbleServices;
-});
+;

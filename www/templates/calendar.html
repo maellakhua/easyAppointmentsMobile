@@ -3,6 +3,6 @@
     <ionic-datepicker date="currentDate" min="minDate" max="maxDate" callback="datePickerCallback">
     <button  class="button button-block button-positive">Chosen Date is:  {{ currentDate | date:'dd/MMMM/yyyy' }}</button>
 </ionic-datepicker>
-<ion-item id="time" href="#/app/time" style="visibility:hidden"><center>Select Time:</center></ion-item>
+<ion-item id="time" href="#/app/services/calendar/{{currentDate}}/time" style="visibility:hidden"><center>Select Time:</center></ion-item>
   </ion-content>
 </ion-view>
