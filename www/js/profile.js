@@ -1,6 +1,6 @@
-angular.module('starter.profile', ['ionic'])
+angular.module('starter.profile', ['ionic','ui.router'])
 
-.controller('ProfileCtrl', function($scope, $stateParams) {
+.controller('ProfileCtrl', function($scope,$state, $stateParams) {
 
 		window.localStorage['fname']="";
 		window.localStorage['surname']="";
@@ -19,8 +19,8 @@ angular.module('starter.profile', ['ionic'])
 			window.localStorage['email']=$scope.email;
 			window.localStorage['phone']=$scope.phone;
 
-			alert(window.localStorage['fname']+" "+window.localStorage['surname']+" "+window.localStorage['email']+" "+window.localStorage['phone']);
-		}	;
+			$state.go('app.services', {}, { reload: true })
+		};	
 
 }
 );

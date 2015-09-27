@@ -6,6 +6,8 @@ angular.module('starter.calendar', ['ionic', 'ionic-datepicker','angular-datepic
 
 $scope.datePickerCallback = function (val) {
     var nextPage = '';
+    var tmp = val.toString();		 
+    tmp.replace('00:00:00 GMT+0300 (EEST)','');	
     if (!val) {
         console.log('Date not selected',val);
         alert("You didn't select a date");
@@ -15,6 +17,7 @@ $scope.datePickerCallback = function (val) {
             alert("This date is unavailable! \n Please provide new date.");
         }else{
             document.getElementById("time").style.visibility = "visible";
+		localStorage.setItem("appointment_date",  tmp);
         }
     }
 };

@@ -1,18 +1,25 @@
 <ion-view view-title="Profile">
-  <ion-content>
-		<div class="list">
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">First Name</span>
-    <input type="text" placeholder="John"ng-model=fname>
-  </label>
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Last Name</span>
-    <input type="text" placeholder="Suhr">
-  </label>
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Email</span>
-    <input type="text" placeholder="john@suhr.com">
-  </label>
-</div>
-  </ion-content>
-</ion-view>
+       <ion-content>
+           <div class="list">
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">First Name</span>
+                   <input type="text" placeholder="Bill" ng-model="$parent.fname" >
+               </label>
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">Last Name</span>
+                   <input id="surname" type="text" placeholder="Charlaftis" ng-model="$parent.surname">
+               </label>
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">Email</span>
+                   <input id="email" type="text" placeholder="it213**@hua.gr" ng-model="$parent.email">
+               </label>
+               <label class="item item-input item-stacked-label">
+                   <span class="input-label">Phone</span>
+                   <input id="phone" type="text" placeholder="6994494994" ng-model="$parent.phone">
+               </label>
+           </div>
+           <div class="Submit">
+               <button class="button icon-right ion-chevron-right button-bar-stable" style="top:25%; left:38%;" ng-click="Submit()">Submit</button>
+           </div>
+       </ion-content>
+   </ion-view>

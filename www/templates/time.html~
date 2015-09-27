@@ -2,7 +2,7 @@
   <ion-content>
   <ionic-timepicker input-obj="timePickerObject">
   <ion-item class="button button-block button-positive overflowShow">
-    <ion-item><standard-time-meridian etime='timePickerObject.inputEpochTime'><center>Select Time:</center></standard-time-meridian></ion-item>
+    <ion-item href="#/app/profile"><standard-time-meridian etime='timePickerObject.inputEpochTime'><center>Select Time:</center></standard-time-meridian></ion-item>
   </ion-item>
 </ionic-timepicker>
 </ion-content>

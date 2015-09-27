@@ -20,7 +20,7 @@ angular.module('starter.time', ['ionic-timepicker','ui.router'])
     $state.go('app.time', {}, { reload: true });
   } else {
     var selectedTime = new Date(val * 1000);
-    console.log('Selected epoch is : ', val, 'and the time is ', selectedTime.getUTCHours(), ':', selectedTime.getUTCMinutes(), 'in UTC');
+    alert('Selected epoch is : ', val, 'and the time is ', selectedTime.getUTCHours(), ':', selectedTime.getUTCMinutes(), 'in UTC');
     $state.go('app.profile', {}, { reload: true });
     localStorage.setItem("appointment_time", selectedTime.getUTCHours(), ':', selectedTime.getUTCMinutes());
   }

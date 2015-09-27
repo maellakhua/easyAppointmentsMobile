@@ -22,7 +22,7 @@
       		Services
       	</ion-item>
       	<ion-item  menu-close href="#/app/appointmemt">
-      		Appointmemts
+      		Appointments
       	</ion-item>
       	<ion-item  menu-close href="#/app/profile">
       		Profile
