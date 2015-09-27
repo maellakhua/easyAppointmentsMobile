@@ -19,16 +19,24 @@ angular.module('starter.providers', [])
 });
 
 	function saveData(){
-		
+	var index;	
 	document.addEventListener('click', function(e) {
-    e = e || window.event;
-    var target = e.target || e.srcElement,
+    	e = e || window.event;
+   	 var target = e.target || e.srcElement,
         text = target.textContent || text.innerText;
-	alert(target);   
+	for(i=0;i<dataArray.length;i++){
+		var name = dataArray[i].provider_name;
+		if(text.indexOf(name) > -1){
+			index = i;
+			localStorage.setItem("category_name",  dataArray[index].category_name);
+			localStorage.setItem("category_id",  dataArray[index].category_id);
+			localStorage.setItem("provider_id",  dataArray[index].provider_id);
+			localStorage.setItem("provider_name",  dataArray[index].provider_name);		
+		}
+	} 
+
 }, false);
 		
-		localStorage.setItem("category_name",  dataArray[0].category_name);
-		localStorage.setItem("provider_id",  dataArray[0].provider_id);
-		localStorage.setItem("provider_name",  dataArray[0].provider_name);
+		
 
 	};
