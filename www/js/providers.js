@@ -19,24 +19,25 @@ angular.module('starter.providers', [])
 });
 
 	function saveData(){
-	var index;	
+	var index;
 	document.addEventListener('click', function(e) {
     	e = e || window.event;
-   	 var target = e.target || e.srcElement,
+   	 	var target = e.target || e.srcElement,
         text = target.textContent || text.innerText;
-	for(i=0;i<dataArray.length;i++){
-		var name = dataArray[i].provider_name;
-		if(text.indexOf(name) > -1){
-			index = i;
-			localStorage.setItem("category_name",  dataArray[index].category_name);
-			localStorage.setItem("category_id",  dataArray[index].category_id);
-			localStorage.setItem("provider_id",  dataArray[index].provider_id);
-			localStorage.setItem("provider_name",  dataArray[index].provider_name);		
-		}
-	} 
+			for(i=0;i<dataArray.length;i++){
+				var name = dataArray[i].provider_name;
+				if(text.indexOf(name) > -1){
+					index = i;
+					localStorage.setItem("category_name",  dataArray[index].category_name);
+					localStorage.setItem("category_id",  dataArray[index].category_id);
+					localStorage.setItem("provider_id",  dataArray[index].provider_id);
+					localStorage.setItem("provider_name",  dataArray[index].provider_name);
+					localStorage.setItem("appointment_time", selectedTime.getUTCHours(), ':', selectedTime.getUTCMinutes());
+				}
+			}
 
 }, false);
-		
-		
+
+
 
 	};

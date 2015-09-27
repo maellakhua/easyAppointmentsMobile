@@ -52,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ionic-timepicker','st
     })
 
 	.state('app.profile', {
-      url: '/services/calendar/time/:time/profile',
+      url: '/profile',
       views: {
         'menuContent': {
           templateUrl: 'templates/profile.html',
