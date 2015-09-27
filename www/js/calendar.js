@@ -15,6 +15,7 @@ $scope.datePickerCallback = function (val) {
         console.log('Selected date is : ', val);
         if($scope.currentDate > val){
             alert("This date is unavailable! \n Please provide new date.");
+            document.getElementById("time").style.visibility = "hidden";
         }else{
             document.getElementById("time").style.visibility = "visible";
 		        localStorage.setItem("appointment_date",  tmp);

@@ -1,6 +1,6 @@
 <ion-view view-title="All Providers">
 	<ion-content>
-		<ion-item item-avatar class="item" ng-repeat="services in availbleServices" ng-click="show('{{services.first_name}}')"><p><h2>Name: {{services.first_name}} {{services.last_name}}</h2></p><div class="wrapper"style="text-align: center;"> <p ng-hide="showme['{{services.first_name}}']">Tap for more details</p><p ng-show="showme['{{services.first_name}}']"> <br> category: {{services.category_name}}<br> Place: {{services.latitude}} {{services.longtitude}}<br> Provider Id: {{services.id}}<br>  Email: {{services.email}}<br>   Description: {{services.description}}<br> Id: {{services.category_id}}</p></div></ion-item item-avatar>
+		<ion-item class="item" ng-repeat="services in availbleServices" ng-click="show('{{services.first_name}}')"><p><h2>Name: {{services.first_name}} {{services.last_name}}</h2></p><div class="wrapper"style="text-align: center;"> <p ng-hide="showme['{{services.first_name}}']">Tap for more details</p><p ng-show="showme['{{services.first_name}}']"> <br> category: {{services.category_name}}<br> Place: {{services.latitude}} {{services.longtitude}}<br> Provider Id: {{services.id}}<br>  Email: {{services.email}}<br>   Description: {{services.description}}<br> Id: {{services.category_id}}</p></div></ion-item>
 	</ion-content>
 </ion-view>
 
